@@ -13,12 +13,13 @@ var {width} = Dimensions.get("window");
 
 const ProductCard = (props)=>{
   const {name, price, image, countInStock}=props;
+  console.log(image);
   return(
       <View style={styles.container}>
           <Image 
           style={styles.imageStyles}
           resizeMode="contain"
-          source={require('../../assets/images/7-78960_burger-transparent-bacon-sonic-bacon-cheeseburger.png')}
+          source={require('../images/7-78960_burger-transparent-bacon-sonic-bacon-cheeseburger.png')}
           />
           <View style={styles.card}/>
           <Text style={styles.title}>
